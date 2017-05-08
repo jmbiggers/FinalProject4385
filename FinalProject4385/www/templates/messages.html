@@ -1,0 +1,10 @@
+<ion-view title="Messages" id="page8" ng-repeat="messages in message">
+  <ion-content padding="true" class="has-header">
+    <div class="item item-body" id="messages-list-item-container1" ng-repeat="notes in messages">
+      <div id="messages-markdown8" class="show-list-numbers-and-dots">
+        <p style="margin-top:0px;color:#000000;">{{notes.Category}} {{notes.Title}} {{notes.dateTime}} {{notes.messageText}}
+        </p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

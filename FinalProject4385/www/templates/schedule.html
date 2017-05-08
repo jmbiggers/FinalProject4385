@@ -1,0 +1,7 @@
+<ion-view title="Schedule" id="page6" ng-repeat="events in event | filter:">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="schedule-list2">
+      <ion-item id="schedule-list-item6" ui-sref="iSCAP.events" ng-repeat="events in event">{{events.eventTitle}} </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

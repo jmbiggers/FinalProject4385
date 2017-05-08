@@ -1,0 +1,15 @@
+<ion-view title="Speakers" id="page3">
+  <ion-content padding="true" class="has-header">
+    <div id="speakers-container1" ng-repeat="authors in authorbio">
+      <div>
+        <a style="display:block;" href-inappbrowser="page5">
+          <img src="{{authors.photo}}" style="display: block; width: 40%; height: auto; margin-left: auto; margin-right: auto;">
+        </a>
+      </div>
+      <h3 id="speakers-heading5" style="color:#000000;text-align:center;">{{authors.firstName}} {{authors.lastName}}</h3>
+      <div id="speakers-markdown4" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">{{authors.biosText}}</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

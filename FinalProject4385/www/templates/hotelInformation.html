@@ -1,0 +1,24 @@
+<ion-view title="Hotel Information" id="page2">
+  <ion-content padding="true" class="has-header">
+    <h4 id="hotelInformation-heading2" style="color:#000000;">HYATT PLACE AUSTIN DOWNTOWN </h4>
+    <div id="hotelInformation-markdown1" class="show-list-numbers-and-dots">
+      <p style="color:#000000;"> 211 E 3rd St, Austin, TX 78701 512 476 4440 www.austindowntown.place.hyatt.com
+      </p>
+    </div>
+    <h4 id="hotelInformation-heading3" style="color:#000000;">Four Seasons Hotel Austin</h4>
+    <div id="hotelInformation-markdown2" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">98 San Jacinto Blvd, Austin, TX 78701 (512) 478-4500 www.fourseasons.com
+      </p>
+    </div>
+    <h4 id="hotelInformation-heading4" style="color:#000000;">Hotel Van Zandt </h4>
+    <div id="hotelInformation-markdown3" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">605 Davis St, Austin, TX 78701 (512) 542-5300 www.hotelvanzandt.com
+      </p>
+    </div>
+    <creator-map-component options="{}" marker="true" location="98 San Jacinto Blvd, Austin, TX 78701" zoom="12" style="display:block;position:relative;width:100%;height:300px;">
+      <ui-gmap-google-map ng-if="map.center" center="map.center" zoom="map.zoom" options="map.options">
+        <ui-gmap-marker coords="map.marker.coords" idkey="map.marker.id" options="map.marker.options"></ui-gmap-marker>
+      </ui-gmap-google-map>
+    </creator-map-component>
+  </ion-content>
+</ion-view>
